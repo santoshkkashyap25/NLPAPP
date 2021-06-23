@@ -1,5 +1,4 @@
 streamlit
-pickle
 joblib
 random
 re
