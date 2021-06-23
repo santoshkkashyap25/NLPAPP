@@ -47,7 +47,7 @@ def main():
 
 	@st.cache
 	def Load_data():
-		df = pickle.load(open('frame_cleaned.pkl','rb'))
+		df = pd.read_csv("frame_cleaned.csv")
 		return df
 
 
@@ -118,7 +118,7 @@ def main():
 
 
 	def kde():
-		frame=pd.read_pickle("frame_cleaned.pkl")
+		frame=pd.read_csv("frame_cleaned.csv")
 		plot = st.selectbox(
 	        "Select a Plot for visualization",
 	        [
@@ -241,7 +241,7 @@ def main():
 
 
 	def pair():
-		frame=pd.read_pickle("frame_cleaned.pkl")
+		frame=pd.read_csv("frame_cleaned.csv")
 		st.write("Pairplot visualization to discover correlations")
 		fig = sns.pairplot(frame[['diversity_ratio', 'diversity', 'word_count', 'runtime', 'rating', 'rating_type']])
 		st.pyplot(fig)
