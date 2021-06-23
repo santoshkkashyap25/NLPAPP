@@ -1,0 +1,15 @@
+streamlit
+pickle
+joblib
+random
+re
+numpy
+pandas
+matplotlib
+seaborn
+wordcloud
+pillow
+collections
+sklearn
+textblob
+warnings
