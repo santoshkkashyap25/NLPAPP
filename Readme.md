@@ -13,17 +13,16 @@ Text pre-processing techniques include:
 Web Scraping:
 
 Web Scraping of a HTML web page to scrape the transacripts of all the comedians from "Scraps From The Loft".The notbook `get_transcripts.ipynb` crawls the Scraps From The Loft web archive for a directory of links and other data relating to transcripts from 330+ comedians' stand-up performances. Collected links are then iterated through to scrape sub-pages which contain the actual transcripts. Some cleaning and tagging is done using Regex and an IMDb api.
-### The dataset that results from running `get_transcripts,ipynb` then `cleaning,ipynb` contains the following columns: 
+### The dataset that results from running `get_transcripts & cleaning.ipynb` contains the following columns: 
           [title, 
-          tags,  
-          link, 
-          name, 
+          tag,  
+          url, 
+          names, 
           year, 
           transcript, 
           language, 
           runtime, 
           rating,
-          words,
           word_count,
           f_words,
           s_words,
