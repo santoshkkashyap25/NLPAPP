@@ -1,6 +1,5 @@
 streamlit
 joblib
-random
 re
 numpy
 pandas
