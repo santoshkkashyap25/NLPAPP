@@ -6,7 +6,6 @@ matplotlib
 seaborn
 wordcloud
 pillow
-collections
 sklearn
 textblob
 warnings
